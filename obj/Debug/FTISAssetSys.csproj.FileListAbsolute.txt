@@ -249,6 +249,6 @@ D:\SourceCode\FTIS-AssetsSys\bin\zh-Hant\System.Web.WebPages.Deployment.resource
 D:\SourceCode\FTIS-AssetsSys\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
 D:\SourceCode\FTIS-AssetsSys\obj\Debug\FTISAssetSys.csproj.AssemblyReference.cache
 D:\SourceCode\FTIS-AssetsSys\obj\Debug\FTISAssetSys.csproj.CoreCompileInputs.cache
-D:\SourceCode\FTIS-AssetsSys\obj\Debug\FTISAssetSys.csproj.CopyComplete
 D:\SourceCode\FTIS-AssetsSys\obj\Debug\FTISAssetSys.dll
 D:\SourceCode\FTIS-AssetsSys\obj\Debug\FTISAssetSys.pdb
+D:\SourceCode\FTIS-AssetsSys\obj\Debug\FTISAsse.DF867299.Up2Date

@@ -21,6 +21,13 @@ namespace FTISAssetSys.Controllers
             return View();
         }
 
+        protected override IEnumerable<AssetUsageLog> GetDataDBObject(IModelEntity<AssetUsageLog> dbEntity, params KeyValueParams[] paras)
+        {
+            var objs = dbEntity.GetAll().ToList();
+            return objs;
+            return base.GetDataDBObject(dbEntity, paras);
+        }
+
         /// <summary>
         /// 更新異動者與異動時間
         /// </summary>
@@ -39,6 +46,7 @@ namespace FTISAssetSys.Controllers
 
         protected override IModelEntity<AssetUsageLog> GetModelEntity()
         {
+            FtisHelperAsset.DB.EmpSelectAllItemsClassImp.ResetAllF22cmmEmpData();
             return new Dou.Models.DB.ModelEntity<AssetUsageLog>(FtisHelperAsset.DB.Helper.CreateFtisAssetModelContext());
             //return new Dou.Models.DB.ModelEntity<AssetUsageLog>(new FTISAssetSys.Models.DouModelContextExt());
         }

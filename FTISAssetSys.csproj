@@ -206,6 +206,9 @@
     <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\ITAttributesController.cs" />
     <Compile Include="Controllers\LoanController.cs" />
+    <Compile Include="Controllers\Rpt_Equipment_SubCateController.cs" />
+    <Compile Include="Controllers\Rpt_Equipment_GroupController.cs" />
+    <Compile Include="Controllers\Rpt_EquipmentController.cs" />
     <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\LoggerController.cs" />
     <Compile Include="Controllers\RepairController.cs" />
@@ -1415,8 +1418,12 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\prj\baseb.js" />
     <Content Include="Scripts\prj\DeptoFno.js" />
     <Content Include="Scripts\prj\Asset.js" />
+    <Content Include="Scripts\prj\Rpt_Equipment_SubCate.js" />
+    <Content Include="Scripts\prj\Rpt_Equipment_Group.js" />
+    <Content Include="Scripts\prj\Rpt_Equipment.js" />
     <Content Include="Scripts\src\index.js" />
     <Content Include="Scripts\src\methods\defaults.js" />
     <Content Include="Scripts\src\methods\destroy.js" />
@@ -1535,6 +1542,9 @@
     <Content Include="Views\Asset\Index.cshtml" />
     <Content Include="Views\UserAsset\Index.cshtml" />
     <Content Include="Views\BarCode\Index.cshtml" />
+    <Content Include="Views\Rpt_Equipment\Index.cshtml" />
+    <Content Include="Views\Rpt_Equipment_Group\Index.cshtml" />
+    <Content Include="Views\Rpt_Equipment_SubCate\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

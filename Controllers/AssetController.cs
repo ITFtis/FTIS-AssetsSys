@@ -266,6 +266,7 @@ namespace FTISAssetSys.Controllers
         protected override IQueryable<Assets> BeforeIQueryToPagedList(IQueryable<Assets> iquery, params KeyValueParams[] paras)
         {
             iquery = base.BeforeIQueryToPagedList(iquery, paras);
+            //篩選條件：保管人部門
             var dep = Dou.Misc.HelperUtilities.GetFilterParaValue(paras, "CustodianDep");
             if (dep != null)
             {

@@ -7,7 +7,7 @@
 @using Dou.Misc.Extension
 @Html.MenuMap()
 @Html.DataManagerOptionsJavascript(null, "douoptions")
-@using (Html.BeginForm("InventoryRpt", "Asset", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@*@using (Html.BeginForm("InventoryRpt", "Asset", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div class="download_button">
         <button type="button" id="ExportData" class='btn btn-secondary' onclick="exportData()">
@@ -17,7 +17,7 @@
             <span class="glyphicon glyphicon-export" aria-hidden="true">匯出總資產清單</span>
         </button>
     </div>
-}
+}*@
 
 <table id="_table" style="font-size:0.8rem"></table>
 <div id="tmpName" hidden></div>

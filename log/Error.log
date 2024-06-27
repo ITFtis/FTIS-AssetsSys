@@ -1,0 +1,158 @@
+2024-06-27 14:07:09,524 ERROR [7] (Startup+<>c:63) - DouErrorHandler發出的錯誤!!
+System.InvalidOperationException: 實體類型 vw_Rpt_Equipment_SubCate 不是目前內容的模型的一部分。
+   於 Dou.Controllers.AModelController`1.<GetData>d__20.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass8_0.<BeginInvokeAsynchronousActionMethod>b__1(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2024-06-27 14:12:01,298 ERROR [8] (Startup+<>c:63) - DouErrorHandler發出的錯誤!!
+System.InvalidOperationException: 實體類型 vw_Rpt_Equipment_SubCate 不是目前內容的模型的一部分。
+   於 Dou.Controllers.AModelController`1.<GetData>d__20.MoveNext()
+--- 先前擲回例外狀況之位置中的堆疊追蹤結尾 ---
+   於 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   於 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   於 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass8_0.<BeginInvokeAsynchronousActionMethod>b__1(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2024-06-27 14:14:04,087 ERROR [7] (Startup+<>c:63) - DouErrorHandler發出的錯誤!!
+System.Exception: System.String錯誤:{"IsPrimaryKey":false,"DefaultValue":null,"Index":610126,"Display":"資產編號","Required":false,"StringLength":13,"Visible":true,"VisibleEdit":true,"VisibleView":true,"Sortable":true,"MobileResponsive":true,"UseInputType":true,"EditType":2,"EditParameter":null,"TextListMatchValue":false,"TextLength":0,"TextAreaHeight":3,"ColTier":2,"ColSize":3,"SelectItems":null,"SelectItemsClassNamespace":"FtisHelperAsset.DB.AssetIDSelectItemsClassImp, FtisHelperAsset","SelectSourceDbContextNamespace":null,"SelectSourceModelNamespace":null,"SelectSourceModelValueField":null,"SelectSourceModelDisplayField":null,"SelectSourceModelFilterField":null,"SelectSourceModelFilterValue":null,"SelectGearingWith":null,"ImageMaxWidth":0,"ImageMaxHeight":0,"Filter":true,"FilterAssign":7,"TypeId":"Dou.Misc.Attr.ColumnDefAttribute, Dou, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null"} ---> System.InvalidOperationException: 不支援每種類型有多個物件集。物件集 'vw_Rpt_Equipment' 和 'vw_Rpt_Equipment_SubCate' 都可以包含類型 'FtisHelperAsset.DB.Model.vw_Rpt_Equipment' 的執行個體。
+   於 System.Data.Entity.Internal.DbSetDiscoveryService.RegisterSets(DbModelBuilder modelBuilder)
+   於 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   於 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   於 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   於 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   於 System.Data.Entity.Internal.InternalContext.Initialize()
+   於 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   於 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   於 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   於 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   於 System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   於 System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   於 FtisHelperAsset.DB.Helpe.Asset.GetAllAssets(Int32 cachetimer) 於 D:\SourceCode\FTIS-Helper-Asset\DB\Helpe\Asset.cs: 行 181
+   於 FtisHelperAsset.DB.AssetIDSelectItemsClassImp.get_ASSETS() 於 D:\SourceCode\FTIS-Helper-Asset\DB\AssetSelectItems.cs: 行 33
+   於 FtisHelperAsset.DB.AssetIDSelectItemsClassImp.GetSelectItems() 於 D:\SourceCode\FTIS-Helper-Asset\DB\AssetSelectItems.cs: 行 41
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions(Type modeType)
+   --- 內部例外狀況堆疊追蹤的結尾 ---
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions(Type modeType)
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions[T]()
+   於 Dou.Controllers.AModelController`1.GetDataManagerOptions()
+   於 FTISAssetSys.Controllers.UserAssetController.GetDataManagerOptions() 於 D:\SourceCode\FTIS-AssetsSys\Controllers\UserAssetController.cs: 行 77
+   於 Dou.Misc.Extension.HtmlHelperExtensions.DataManagerOptionsJavascript(HtmlHelper helper, String containerSelector, String javascriptOptionsVarname, Type t, Controller ctrl)
+   於 ASP._Page_Views_UserAsset_Index_cshtml.Execute() 於 D:\SourceCode\FTIS-AssetsSys\Views\UserAsset\Index.cshtml: 行 7
+   於 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   於 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   於 System.Web.WebPages.StartPage.RunPage()
+   於 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   於 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   於 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   於 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   於 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2024-06-27 14:19:27,088 ERROR [9] (Startup+<>c:63) - DouErrorHandler發出的錯誤!!
+System.Exception: System.String錯誤:{"IsPrimaryKey":false,"DefaultValue":null,"Index":610126,"Display":"資產編號","Required":false,"StringLength":13,"Visible":true,"VisibleEdit":true,"VisibleView":true,"Sortable":true,"MobileResponsive":true,"UseInputType":true,"EditType":2,"EditParameter":null,"TextListMatchValue":false,"TextLength":0,"TextAreaHeight":3,"ColTier":2,"ColSize":3,"SelectItems":null,"SelectItemsClassNamespace":"FtisHelperAsset.DB.AssetIDSelectItemsClassImp, FtisHelperAsset","SelectSourceDbContextNamespace":null,"SelectSourceModelNamespace":null,"SelectSourceModelValueField":null,"SelectSourceModelDisplayField":null,"SelectSourceModelFilterField":null,"SelectSourceModelFilterValue":null,"SelectGearingWith":null,"ImageMaxWidth":0,"ImageMaxHeight":0,"Filter":true,"FilterAssign":7,"TypeId":"Dou.Misc.Attr.ColumnDefAttribute, Dou, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null"} ---> System.InvalidOperationException: 不支援每種類型有多個物件集。物件集 'vw_Rpt_Equipment' 和 'vw_Rpt_Equipment_SubCate' 都可以包含類型 'FtisHelperAsset.DB.Model.vw_Rpt_Equipment' 的執行個體。
+   於 System.Data.Entity.Internal.DbSetDiscoveryService.RegisterSets(DbModelBuilder modelBuilder)
+   於 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   於 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   於 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   於 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   於 System.Data.Entity.Internal.InternalContext.Initialize()
+   於 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   於 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   於 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   於 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   於 System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   於 System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   於 FtisHelperAsset.DB.Helpe.Asset.GetAllAssets(Int32 cachetimer) 於 D:\SourceCode\FTIS-Helper-Asset\DB\Helpe\Asset.cs: 行 181
+   於 FtisHelperAsset.DB.AssetIDSelectItemsClassImp.get_ASSETS() 於 D:\SourceCode\FTIS-Helper-Asset\DB\AssetSelectItems.cs: 行 33
+   於 FtisHelperAsset.DB.AssetIDSelectItemsClassImp.GetSelectItems() 於 D:\SourceCode\FTIS-Helper-Asset\DB\AssetSelectItems.cs: 行 41
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions(Type modeType)
+   --- 內部例外狀況堆疊追蹤的結尾 ---
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions(Type modeType)
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions[T]()
+   於 Dou.Controllers.AModelController`1.GetDataManagerOptions()
+   於 FTISAssetSys.Controllers.UserAssetController.GetDataManagerOptions() 於 D:\SourceCode\FTIS-AssetsSys\Controllers\UserAssetController.cs: 行 77
+   於 Dou.Misc.Extension.HtmlHelperExtensions.DataManagerOptionsJavascript(HtmlHelper helper, String containerSelector, String javascriptOptionsVarname, Type t, Controller ctrl)
+   於 ASP._Page_Views_UserAsset_Index_cshtml.Execute() 於 D:\SourceCode\FTIS-AssetsSys\Views\UserAsset\Index.cshtml: 行 7
+   於 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   於 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   於 System.Web.WebPages.StartPage.RunPage()
+   於 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   於 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   於 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   於 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   於 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2024-06-27 14:21:19,287 ERROR [6] (Startup+<>c:63) - DouErrorHandler發出的錯誤!!
+System.Exception: System.String錯誤:{"IsPrimaryKey":false,"DefaultValue":null,"Index":610126,"Display":"資產編號","Required":false,"StringLength":13,"Visible":true,"VisibleEdit":true,"VisibleView":true,"Sortable":true,"MobileResponsive":true,"UseInputType":true,"EditType":2,"EditParameter":null,"TextListMatchValue":false,"TextLength":0,"TextAreaHeight":3,"ColTier":2,"ColSize":3,"SelectItems":null,"SelectItemsClassNamespace":"FtisHelperAsset.DB.AssetIDSelectItemsClassImp, FtisHelperAsset","SelectSourceDbContextNamespace":null,"SelectSourceModelNamespace":null,"SelectSourceModelValueField":null,"SelectSourceModelDisplayField":null,"SelectSourceModelFilterField":null,"SelectSourceModelFilterValue":null,"SelectGearingWith":null,"ImageMaxWidth":0,"ImageMaxHeight":0,"Filter":true,"FilterAssign":7,"TypeId":"Dou.Misc.Attr.ColumnDefAttribute, Dou, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null"} ---> System.InvalidOperationException: 無法判定類型 'FtisHelperAsset.DB.Model.vw_Rpt_Equipment_SubCate' 的複合主索引鍵順序。請使用 ColumnAttribute (參閱 http://go.microsoft.com/fwlink/?LinkId=386388) 或 HasKey 方法 (參閱 http://go.microsoft.com/fwlink/?LinkId=386387) 指定複合主索引鍵的順序。
+   於 System.Data.Entity.ModelConfiguration.Configuration.Types.EntityTypeConfiguration.ConfigureKey(EntityType entityType)
+   於 System.Data.Entity.ModelConfiguration.Configuration.Types.EntityTypeConfiguration.Configure(EntityType entityType, EdmModel model)
+   於 System.Data.Entity.ModelConfiguration.Configuration.ModelConfiguration.ConfigureEntities(EdmModel model)
+   於 System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   於 System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   於 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   於 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   於 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   於 System.Data.Entity.Internal.InternalContext.Initialize()
+   於 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   於 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   於 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   於 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   於 System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   於 System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   於 FtisHelperAsset.DB.Helpe.Asset.GetAllAssets(Int32 cachetimer) 於 D:\SourceCode\FTIS-Helper-Asset\DB\Helpe\Asset.cs: 行 181
+   於 FtisHelperAsset.DB.AssetIDSelectItemsClassImp.get_ASSETS() 於 D:\SourceCode\FTIS-Helper-Asset\DB\AssetSelectItems.cs: 行 33
+   於 FtisHelperAsset.DB.AssetIDSelectItemsClassImp.GetSelectItems() 於 D:\SourceCode\FTIS-Helper-Asset\DB\AssetSelectItems.cs: 行 41
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions(Type modeType)
+   --- 內部例外狀況堆疊追蹤的結尾 ---
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions(Type modeType)
+   於 Dou.Misc.DataManagerScriptHelper.GetDataManagerOptions[T]()
+   於 Dou.Controllers.AModelController`1.GetDataManagerOptions()
+   於 FTISAssetSys.Controllers.UserAssetController.GetDataManagerOptions() 於 D:\SourceCode\FTIS-AssetsSys\Controllers\UserAssetController.cs: 行 77
+   於 Dou.Misc.Extension.HtmlHelperExtensions.DataManagerOptionsJavascript(HtmlHelper helper, String containerSelector, String javascriptOptionsVarname, Type t, Controller ctrl)
+   於 ASP._Page_Views_UserAsset_Index_cshtml.Execute() 於 D:\SourceCode\FTIS-AssetsSys\Views\UserAsset\Index.cshtml: 行 7
+   於 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   於 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   於 System.Web.WebPages.StartPage.RunPage()
+   於 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   於 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   於 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   於 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   於 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   於 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   於 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)

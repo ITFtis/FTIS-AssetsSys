@@ -68,6 +68,20 @@
                 $_masterTable.DouEditableTable('updateDatas', result.data);//取消編輯，detail有可能已做一些改變，故重刷UI
             })
     }
+
+    //20240207, add by markhong UI：下載資料
+    douoptions.appendCustomToolbars = [{
+        item: '<span class="btn btn-primary glyphicon glyphicon-export" title="表格匯出">表格匯出</span>', event: 'click .glyphicon-sort',
+        callback: function (e) {
+            exportData();
+        }
+    }, {
+        item: '<span class="btn btn-primary glyphicon glyphicon-export" title="總表匯出">總表匯出</span>', event: 'click .glyphicon-sort',
+            callback: function (e) {
+                AssetInventoryExport();
+            }
+        }];
+
     //新增Col：資訊設備
     douoptions.fields.push({
         title: "IT明細", field: "ITButton", align: "center", formatter: detailbtn, visibleEdit: false

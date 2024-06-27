@@ -1,0 +1,20 @@
+﻿<script src="~/Scripts/prj/Rpt_Equipment.js"></script>
+<script src="~/Scripts/prj/baseb.js"></script>
+@using Dou.Misc.Extension
+@Html.MenuMap()
+@Html.DataManagerOptionsJavascript(null, "douoptions")
+<table id="_table"></table>
+<p></p>
+<div>
+    註：統計時間：
+    @{
+        DateTime currentTime = DateTime.Now;
+        DateTime startDate = (currentTime >= new DateTime(currentTime.Year, 8, 1) && currentTime < new DateTime(currentTime.Year + 1, 7, 31))
+            ? new DateTime(currentTime.Year, 8, 1)
+            : new DateTime(currentTime.Year - 1, 8, 1);
+        DateTime endDate = (currentTime >= new DateTime(currentTime.Year, 8, 1) && currentTime < new DateTime(currentTime.Year + 1, 7, 31))
+            ? new DateTime(currentTime.Year + 1, 7, 31)
+            : new DateTime(currentTime.Year, 7, 31);
+    }
+    @startDate.ToString("yyyy 年 MM 月 dd 日") ~ @endDate.ToString("yyyy 年 MM 月 dd 日")
+</div>
