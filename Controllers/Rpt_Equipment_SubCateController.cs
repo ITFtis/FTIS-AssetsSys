@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 
 namespace FTISAssetSys.Controllers
 {
-    [Dou.Misc.Attr.MenuDef(Name = "各項設備數量表", MenuPath = "統計專區", Action = "Index", Index = 52, Func = Dou.Misc.Attr.FuncEnum.ALL, AllowAnonymous = false)]
+    [Dou.Misc.Attr.MenuDef(Name = "次項設備數量表", MenuPath = "統計專區", Action = "Index", Index = 52, Func = Dou.Misc.Attr.FuncEnum.None, AllowAnonymous = false)]
 
     public class Rpt_Equipment_SubCateController : Dou.Controllers.AGenericModelController<vw_Rpt_Equipment_SubCate>
     {
@@ -26,7 +26,8 @@ namespace FTISAssetSys.Controllers
         {
             //條件
             var _CateID = Dou.Misc.HelperUtilities.GetFilterParaValue(paras, "CateID");
-            var objs = string.IsNullOrEmpty(_CateID) ? dbEntity.GetAll().OrderBy(r => r.CateID) : dbEntity.GetAll().Where(x => x.CateID == _CateID).OrderBy(r => r.CateID);
+            var objs = dbEntity.GetAll().OrderBy(r => r.CateID);
+            //var objs = string.IsNullOrEmpty(_CateID) ? dbEntity.GetAll().OrderBy(r => r.CateID) : dbEntity.GetAll().Where(x => x.CateID == _CateID).OrderBy(r => r.CateID);
             _vwRES = objs.ToList();
             return objs;
         }

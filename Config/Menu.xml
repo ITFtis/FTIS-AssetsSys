@@ -16,7 +16,7 @@
     <Id>盤點</Id>
   </MenuDefAttribute>
   <MenuDefAttribute>
-    <Name>各類設備數量表</Name>
+    <Name>各項設備數量表</Name>
     <MenuPath>統計專區</MenuPath>
     <Index>50</Index>
     <AllowAnonymous>false</AllowAnonymous>
@@ -24,11 +24,11 @@
     <IsOnlyPath>false</IsOnlyPath>
     <IsPromptUI>false</IsPromptUI>
     <FromAppend>false</FromAppend>
-    <Target>統計專區.各類設備數量表</Target>
+    <Target>統計專區.各項設備數量表</Target>
     <ActionController>Rpt_Equipment</ActionController>
     <Action>Index</Action>
     <ExportCSV>false</ExportCSV>
-    <Id>統計專區.各類設備數量表</Id>
+    <Id>統計專區.各項設備數量表</Id>
   </MenuDefAttribute>
   <MenuDefAttribute>
     <Name>各組資訊設備使用量</Name>
@@ -46,19 +46,19 @@
     <Id>統計專區.各組資訊設備使用量</Id>
   </MenuDefAttribute>
   <MenuDefAttribute>
-    <Name>各項設備數量表</Name>
+    <Name>次項設備數量表</Name>
     <MenuPath>統計專區</MenuPath>
     <Index>52</Index>
     <AllowAnonymous>false</AllowAnonymous>
-    <Func>ALL</Func>
+    <Func>None</Func>
     <IsOnlyPath>false</IsOnlyPath>
     <IsPromptUI>false</IsPromptUI>
     <FromAppend>false</FromAppend>
-    <Target>統計專區.各項設備數量表</Target>
+    <Target>統計專區.次項設備數量表</Target>
     <ActionController>Rpt_Equipment_SubCate</ActionController>
     <Action>Index</Action>
     <ExportCSV>false</ExportCSV>
-    <Id>統計專區.各項設備數量表</Id>
+    <Id>統計專區.次項設備數量表</Id>
   </MenuDefAttribute>
   <MenuDefAttribute>
     <Name>個人資產資料</Name>

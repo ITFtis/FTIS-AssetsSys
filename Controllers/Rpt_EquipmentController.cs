@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 
 namespace FTISAssetSys.Controllers
 {
-    [Dou.Misc.Attr.MenuDef(Name = "各類設備數量表", MenuPath = "統計專區", Action = "Index", Index = 50, Func = Dou.Misc.Attr.FuncEnum.None, AllowAnonymous = false)]
+    [Dou.Misc.Attr.MenuDef(Name = "各項設備數量表", MenuPath = "統計專區", Action = "Index", Index = 50, Func = Dou.Misc.Attr.FuncEnum.None, AllowAnonymous = false)]
 
     public class Rpt_EquipmentController : Dou.Controllers.AGenericModelController<vw_Rpt_Equipment>
     {
